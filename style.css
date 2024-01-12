@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.shopping-card-list {
+  position: absolute;
+  width: 25rem;
+  right: 0.75rem;
+  top: 2.9rem;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.shopping-card-list .list-item {
+  margin-top: 1rem;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 15x;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: white;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: blue; 
+}
+
+.button-group{
+  margin: 3px;
+  padding: 2px;
+  text-align: center;
+}
+
+.filter-btn{
+  margin-top: 10px;
+  padding-right: 16px;
+  border: 0;
+  background-color: white;
+  color: blue;
+  font-size: 25px;
+}
+
+.filter-btn:hover{
+  color: darkblue;
+}
+
+.card-text-price{
+  color: blue;
+}
+
+.sayfalandirma{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 75px;
+}
+
+.baslik{
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(38, 38, 187);
+}
+
+.widget-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-widget {
+  overflow: hidden;
+  width: 700px;
+  margin: 0 10px;
+}
+
+.product-list {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  min-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+  border: 0;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.product h5 {
+  margin-top: 8px;
+}
+
+#prevBtn, #nextBtn {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: #2980b9;
+  border: 1px solid #3498db; 
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+}
+
+.slogan {
+  margin-top: 10px;
+  font-size: 36px;
+  color: blue;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.hakkimizda {
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.kurulus-hikayemiz, .misyonumuz, .vizyonumuz {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.icerik {
+  font-size: 16px;
+}

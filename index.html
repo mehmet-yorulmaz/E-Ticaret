@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Ticaret Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark" sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">E-Ticaret</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kategori</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="erkekgiyim.html">Erkek Giyim</a></li>
+                <li><a class="dropdown-item" href="kadingiyim.html">Kadın Giyim</a></li>
+                <li><a class="dropdown-item" href="ayakkabi.html">Ayakkabı</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Sepet İkonu -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sepetModal">
+  Sepet <span class="badge badge-light" id="sepetBadge">0</span>
+</button>
+
+<!-- Sepet Modal Penceresi -->
+<div class="modal fade" id="sepetModal" tabindex="-1" role="dialog" aria-labelledby="sepetModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="sepetModalLabel">Sepet İçeriği</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <!-- Sepet içeriği buraya dinamik olarak eklenecek -->
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- Navbar End-->
+    <!-- Header Start-->
+    <header>
+      <div class="container mt-5">
+        <div class="carousel-container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carousel.png" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel2.png" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel3.png" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End-->
+    <!-- Main Start-->
+    <div class="baslik">
+      <span>ÖNE ÇIKAN ÜRÜNLER</span>
+    </div>
+    <div class="widget-container">
+      <button id="prevBtn">←</button>
+      <div class="product-widget">
+        <div class="product-list" id="productList">
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20202/6911199/v1/l_20202-w3i194z8-cwl_a1.jpg">
+            <h5>LCW STEPS Pelüş Erkek Ev Terliği</h5>
+            <p class="card-text-price"><strong>Fiyat: 1.299,99 TL</strong></p>
+            <button class="btn btn-primary Sepete ekle" data-product-id="ürün1">Sepete ekle</button>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/mpsellerportal/v1/img_014435399v1_9862db3c-997b-4777-864e-f5f1fae75b72.jpg">
+            <h5>Walkway Victor Siyah Erkek Krampon</h5>
+            <p class="card-text-price"><strong>Fiyat: 779,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/6656795/v1/l_20232-w3ce92z8-cvl-98-75-82-190_a.jpg">
+            <h5>LCWAIKIKI Classic Standart Kalıp Kapüşonlu Erkek Şişme Mont</h5>
+            <p class="card-text-price"><strong>Fiyat: 1.779,99TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/6452371/v2/l_20232-w31097z8-cvl-102-88-96-190_a.jpg">
+            <h5>LCWAIKIKI Classic Standart Kalıp Dik Yaka Erkek Deri Görünümlü Mont</h5>
+            <p class="card-text-price"><strong>Fiyat: 1.299,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/7004693/v1/l_20232-w3j575z8-q6k-84-59-89-177_a.jpg">
+            <h5>LCW Active Dik Yaka Baskılı Uzun Kollu Oversize Kadın Sweatshirt</h5>
+            <p class="card-text-price"><strong>Fiyat: 399,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/6965364/v2/l_20232-w3io90z8-cvl-83-63-89-17_a1.jpg">
+            <h5>LCW Vision Balıkçı Yaka Düz Uzun Kollu Kadın Triko Elbise</h5>
+            <p class="card-text-price"><strong>Fiyat: 449,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/mpsellerportal/v1/img_114943152v1_2f817dc4-65e0-42a2-8e14-4cd4034bc623.jpg">
+            <h5>SHADE Kadın Zebra Desenli Viskon Gömlek</h5>
+            <p class="card-text-price"><strong>Fiyat: 239,90 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/mpsellerportal/v9/img_081115141v9_883c2810-e820-4c15-9f06-e710f12c957c.jpg">
+            <h5>Letoon Nkt07 Erkek Trekking Bot</h5>
+            <p class="card-text-price"><strong>Fiyat: 879,80 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/6556780/v1/l_20232-w38201z8-huc_a.jpg">
+            <h5>LCW STEPS Deri Görünümlü Kadın Bot</h5>
+            <p class="card-text-price"><strong>Fiyat: 699,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+          <div class="product">
+            <img src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20232/6495436/v1/l_20232-w33539z8-cvl-96-76-93-186_a1.jpg">
+            <h5>LCW Casual Uzun Kollu Erkek Hoodie</h5>
+            <p class="card-text-price"><strong>Fiyat: 399,99 TL</strong></p>
+            <a href="#" class="btn btn-primary">Sepete ekle</a>
+          </div>
+        </div>
+      </div>
+      <button id="nextBtn">→</button>
+    </div>
+    <!-- Main End-->
+    <!-- Footer Start-->
+    <div class="container-fluid bg-dark mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Ana Sayfa</a></li>
+              <li class="nav-item"><a href="hakkimizda.html" class="nav-link px-2 text-white">Hakkımızda</a></li>
+              <li class="nav-item"><a href="iletisim.html" class="nav-link px-2 text-white">İletişim</a></li>
+            </ul>
+            <p class="text-center text-white">© 2024 E-TİCARET </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End-->
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+  </html>
